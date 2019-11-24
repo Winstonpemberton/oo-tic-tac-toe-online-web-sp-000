@@ -119,7 +119,7 @@ class TicTacToe
       if draw?() == true
         puts "Cat's Game!"
       end
-      puts "Congratulations #{winner(board)}!"
+      puts "Congratulations #{winner}!"
     else
       turn()
       play()
