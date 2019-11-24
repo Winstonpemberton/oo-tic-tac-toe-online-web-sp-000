@@ -121,8 +121,8 @@ class TicTacToe
     end
     puts "Congratulations #{winner(board)}!"
   else
-    turn(board)
-    play(board)
+    turn()
+    play()
   end
 
 
