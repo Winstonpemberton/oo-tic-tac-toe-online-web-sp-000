@@ -124,6 +124,6 @@ class TicTacToe
     turn(board)
     play(board)
   end
-  
+
 
 end
