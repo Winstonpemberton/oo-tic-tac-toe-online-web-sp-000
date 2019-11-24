@@ -82,4 +82,36 @@ class TicTacToe
     false
   end
 
+  def full?
+    if board.any? {|index| index == " "}
+    elsif won?() == false
+        return true
+    end
+  end
+
+  def draw?()
+    if full?() == true
+      if won?() == false
+        true
+      end
+    end
+  end
+
+  def over?()
+    if draw?() == true
+        true
+    elsif won?() != false
+        true
+    end
+  end
+
+  def winner()
+    winner = won?()
+    if winner
+      win_index_1 = winner[0]
+      position_1 = board[win_index_1]
+      position_1
+    end
+  end
+
 end
