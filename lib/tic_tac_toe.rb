@@ -114,4 +114,16 @@ class TicTacToe
     end
   end
 
+  def play()
+  if over?() == true
+    if draw?() == true
+      puts "Cat's Game!"
+    end
+    puts "Congratulations #{winner(board)}!"
+  else
+    turn(board)
+    play(board)
+  end
+  
+
 end
